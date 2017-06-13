@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publication Access,Retreival and Storage</title>
+    <link rel="stylesheet" href="indexPageStylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<style>
+    .images
+    {
+        display:none;
+    }
+</style>
+<body>
+    <div id="heading">
+        <div id="image1">
+                <img src="drdologo1.png" width="150px" height="130px"/>
+        </div>
+
+        <p id="drdotext">DRDO</p>
+        <p id="fullForm">Defence Research and Development Organisation.</p>
+
+    </div>
+    <!--<h1> SOLID STATE PHYSICS LABORATORY</h1>-->
+    <!--<h2>Publication Access,Retreival and Storage</h2>-->
+
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <!--<p class="solidState">Solid State Physics Laboratory</p>-->
+                <!--<p class="pub">Publication Access and Retrieval System</p>-->
+                <img src="sspl-home-1.jpg" width="950px" height="500px" class="images">
+            </div>
+            <!--<div class="slide">-->
+                <!--&lt;!&ndash;<p class="solidState">Solid State Physics Laboratory</p>&ndash;&gt;-->
+                <!--&lt;!&ndash;<p class="pub">Publication Access and Retrieval System</p>&ndash;&gt;-->
+                <!--<img src="sspl-home-2.jpg" width="950px" height="500px" class="images">-->
+            <!--</div>-->
+
+            <div class="slide">
+                <!--<p class="solidState">Solid State Physics Laboratory</p>-->
+                <!--<p class="pub">Publication Access and Retrieval System</p>-->
+                <img src="sspl-home-3.jpg" width="950px" height="500px" class="images">
+            </div>
+
+            <div class="slide">
+                <!--<p class="solidState">Solid State Physics Laboratory</p>-->
+                <!--<p class="pub">Publication Access and Retrieval System</p>-->
+                <img src="sspl-home-4.jpg" width="950px" height="500px" class="images">
+            </div>
+
+            <div class="slide">
+                <!--<p class="solidState">Solid State Physics Laboratory</p>-->
+                <!--<p class="pub">Publication Access and Retrieval System</p>-->
+                <img src="sspl-home-5.jpg" width="950px" height="500px" class="images">
+
+            </div>
+        </figure>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("images");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 4000); // Change image every 2 seconds
+            }
+        </script>
+        <div id="headingContainer">
+        <h1 id="heading1">Solid State Physics Laboratory</h1>
+        <h3 id="heading2">Publication and Journal Access and Storage System</h3>
+        </div>
+        <div>
+
+            <button class="button" style="vertical-align:middle" id="button1"><span>Storage of Publication Data </span></button>
+            <button class="button" style="vertical-align:middle" id="button2"><span>Search by National/International/Technical Report </span></button>
+            <button class="button" style="vertical-align:middle" id="button3"><span>Search by Title </span></button>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
