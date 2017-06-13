@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #f4511e;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #f7522f;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<body>
+
+<div>
+    <form>
+        <label for="fname" style="font-family: Calibri,serif;">Title</label>
+        <input type="text" id="fname" name="firstname" placeholder="Title of the publication..">
+
+        <label for="lname" style="font-family: Calibri,serif;">Author/Co-Author</label>
+        <input type="text" id="lname" name="lastname" placeholder="Name of Authors and Co-Authors..">
+
+        <label for="typeOfconfjou" style="font-family: Calibri,serif;">Journal/Conference Type</label>
+        <select id="typeOfconfjou" name="country">
+            <option value="internationalConference">International Conference</option>
+            <option value="nationalConference">National Conference</option>
+            <option value="internationalJournal">International Journal</option>
+            <option value="nationalJournal">National Journal</option>
+            <option value="technicalReport">Technical Report</option>
+        </select>
+
+        <label for="venjou" style="font-family: Calibri,serif;">Venue/Journal Name</label>
+        <input type="text" id="venjou" placeholder="Name of venue/journal source..">
+
+        <label for="pubno" style="font-family: Calibri,serif;">Publication Number</label>
+        <input type="text" id="pubno" placeholder="Enter Publication Number....">
+
+        <label for="status" style="font-family: Calibri,serif;">Status(Approved/Not Approved)</label>
+        <select id="status" name="status">
+            <option value="approved">Approved</option>
+            <option value="notapproved">Not Approved</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
