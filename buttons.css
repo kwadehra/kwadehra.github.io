@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 15px;
     padding: 20px;
-    width: 300px;
+    width: 250px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 50px;
@@ -40,15 +40,20 @@
 }
 #button1
 {
-    margin-top: 140px;
+    margin-top: 250px;
+    margin-left:100px;
 }
 #button2
 {
-    margin-top: 140px;
+    margin-top: 250px;
     margin-left:120px;
 }
 #button3
 {
-    margin-top: 140px;
+    margin-top: 250px;
     margin-left:120px;
+}
+#buttons
+{
+    margin-top: 100px;
 }
